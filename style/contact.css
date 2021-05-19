@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+.section2 .big-picture {
+  height: 100vh;
+  background-color: #1383af;
+}
+
+.section2 .big-picture img {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  opacity: 0.4;
+}
+
+.section2 .big-picture h1 {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  font-size: 3rem;
+  font-family: "Krona One", sans-serif;
+}
+
+.section2 .big-picture p {
+  position: absolute;
+  top: 40%;
+  left: 34%;
+  text-shadow: 2px 2px 0.5px black;
+  color: white;
+  font-family: "Krona One", sans-serif;
+  font-size: 1rem;
+}
+
+.section2 .form {
+  background-color: #c0fefc;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 .form form {
+  line-height: 80px;
+  position: relative;
+}
+
+.section2 .form form label {
+  position: relative;
+  bottom: 40px;
+  font-family: "Krona One", sans-serif;
+  left: 60px;
+}
+
+.section2 .form form .submit {
+  position: absolute;
+  bottom: -100px;
+  padding: 15px 40px;
+  font-size: larger;
+  border-bottom-right-radius: 20px;
+  border: none;
+  left: 35%;
+  color: white;
+  background-color: #11cca3;
+  font-family: "Krona One", sans-serif;
+  font-weight: bold;
+}
+
+.section2 .form form .submit:hover {
+  background-color: #ff8800;
+}
+
+.section2 .form form .input {
+  border: none;
+  border-bottom: 2px solid #2e3335;
+  padding-right: 200px;
+  padding-top: 20px;
+  text-align: justify;
+  margin-left: 100px;
+  background: none;
+}
+
+.section2 .form form textarea {
+  position: relative;
+  top: 50px;
+  right: 8%;
+  font-weight: bold;
+}
+
+.section2 .form form .textarealabel {
+  position: relative;
+  bottom: 150px;
+}
+
+.section2 .form form .input:focus {
+  border: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid #1383af;
+}
+/*# sourceMappingURL=contact.css.map */

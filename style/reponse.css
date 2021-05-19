@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+body {
+  padding: 0%;
+  margin: 0%;
+}
+.center {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.center h1 {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+.center p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.center img {
+  position: absolute;
+  top: 20%;
+  left: 33%;
+}
+.links {
+  display: flex;
+  position: absolute;
+  top: 80%;
+  left: 32%;
+}
+.links a {
+  /* text-decoration: none;
+  margin-left: 20px; */
+  display: inline-block;
+  list-style: none;
+  margin-left: 30px;
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #2ea8d9;
+  font-family: "Krona One", sans-serif;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Krona One", sans-serif;
+}
+
+.links a:hover {
+  color: #75cfb8;
+  background-color: #007580;
+  color: #f9fafa;
+  border-radius: 3rem;
+}

@@ -1,0 +1,70 @@
+
+@import './variables'
+body {
+  background-color: $colorContinner;
+  font-family: $font-family;
+
+  h1 {
+    padding-top: 50px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgb(177, 16, 16);
+  }
+
+  .content-logiciel {
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+
+    .logiciel {
+      margin-top: 30px;
+      width: 300px;
+      height: 600px;
+      margin-bottom: 20px;
+      position: relative;
+      background-color: $colorBleu;
+      border-radius: 15px;
+      box-shadow: 1px 1px 15px 2px rgb(119, 129, 128);
+
+      img {
+        margin-top: 30px;
+        width: 270px;
+        height: auto;
+      }
+
+      a {
+        position: absolute;
+        text-decoration: none;
+        color: $colorFont;
+        font-family: $font-family;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 10px 30px;
+        background-color: $colorbackbotton;
+        border-end-end-radius: 15px;
+        border-start-start-radius: 40px;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        bottom: 20px;
+        right: 20px;
+      }
+
+      a:hover {
+        background-color: $colorhover;
+        color: white;
+        transition: all 0.3s linear;
+      }
+      p {
+        margin-top: 50px;
+        color: #000;
+      }
+      .name {
+        font-weight: bold;
+        font-size: 20px;
+        color: rgb(243, 12, 12);
+      }
+     
+    }
+  }
+}

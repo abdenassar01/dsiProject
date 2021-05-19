@@ -1,0 +1,80 @@
+body {
+  background-color: #c0fefc;
+  font-family: "Krona One", sans-serif;
+}
+
+body h1 {
+  padding-top: 50px;
+  text-align: center;
+  text-shadow: 1px 1px 3px #b11010;
+}
+
+body .content-logiciel {
+  text-align: center;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+body .content-logiciel .logiciel {
+  margin-top: 30px;
+  width: 300px;
+  height: 600px;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #d4f8f8;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 15px 2px #778180;
+          box-shadow: 1px 1px 15px 2px #778180;
+}
+
+body .content-logiciel .logiciel img {
+  margin-top: 30px;
+  width: 270px;
+  height: auto;
+}
+
+body .content-logiciel .logiciel a {
+  position: absolute;
+  text-decoration: none;
+  color: #e2e9f1;
+  font-family: "Krona One", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 30px;
+  background-color: #11cca3;
+  border-end-end-radius: 15px;
+  border-start-start-radius: 40px;
+  text-shadow: 1px 1px 2px black;
+  bottom: 20px;
+  right: 20px;
+}
+
+body .content-logiciel .logiciel a:hover {
+  background-color: #ff8800;
+  color: white;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+body .content-logiciel .logiciel p {
+  margin-top: 50px;
+  color: #000;
+  margin-top: 0%;
+}
+
+body .content-logiciel .logiciel .name {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f30c0c;
+  margin-top: 0%;
+}
+#SQL-Server{
+  margin-top: 0%;
+}
