@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap');
 .section2 .big-picture {
   height: 100vh;
   background-color: #1383af;
@@ -101,4 +103,66 @@
   transition: all 0.2s ease-in-out;
   border-bottom: 2px solid #1383af;
 }
-/*# sourceMappingURL=contact.css.map */
+.doctor .box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.doctor .box-container .box{
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  padding:1rem;
+  margin:1.5rem;
+  text-align: center;
+  background:#fff;
+  border:.1rem solid rgba(0,0,0,.1);
+  width:33rem;
+}
+
+.doctor .box-container .box img{
+  margin:1rem;
+  border-radius: 50%;
+  height:20rem;
+  width:20rem;
+  object-fit: cover;
+  background:var(--blue);
+}
+
+.doctor .box-container .box h3{
+  font-size: 2rem;
+  font-family: 'Newsreader', serif;
+  color:var(--blue);
+}
+
+.doctor .box-container .box span{
+  font-size: 1.5rem;
+  color:var(--dark-blue);
+}
+
+.doctor .box-container .box .share{
+  border-top: .1rem solid rgba(0,0,0,.1);
+  padding:1rem;
+  margin-top: 1rem;
+}
+
+.doctor .box-container .box .share a{
+  border-radius: 50%;
+  height: 4.5rem;
+  width:4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.5rem;
+  margin: .5rem;
+  background:#eee;
+  color:var(--blue);
+  transition: all 0.2s ease;
+}
+
+.doctor .box-container .box .share a:hover{
+   color:#1383af;
+}
+.footer{
+  text-align:center ;
+  font-family: 'Roboto Slab', serif;
+}
