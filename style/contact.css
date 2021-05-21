@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 .section2 .big-picture {
   height: 100vh;
   background-color: #1383af;
@@ -30,106 +32,61 @@
   font-family: "Krona One", sans-serif;
   font-size: 1rem;
 }
-.abs{
-  display: flex;
-}
-.contact .row{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+.grid-container { height: 100%; margin-top: 20px; }
 
-.contact .row form{
-  flex:1 1 40rem;
-  background: var(--primary-bg-color);
-  padding: 2rem;
-  margin:1rem;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-  border-radius: .5rem;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 17px;
+  grid-template-areas:
+    ". img-contact img-contact img-contact img-contact forms-contact forms-contact forms-contact forms-contact .";
 }
 
+.img-contact { grid-area: img-contact; }
 
+.forms-contact { grid-area: forms-contact; 
+align-self: center;margin-bottom: 20px;}
 
-
-
-
-
-.contact .row form .inputBox{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact .row form input, .contact .row form textarea{
-  padding:1rem 0;
-  margin:1rem 0;
-  font-size: 1.7rem;
-  border-bottom: .1rem solid var(--secondary-text-color);
-  text-transform: none;
-  background:none;
-  color:var(--main-color);
+.img-contact img{
   width: 100%;
+  height: 100%;
 }
-
-.contact .row form input::placeholder, .contact .row form textarea::placeholder{
-  text-transform: capitalize;
-  color:var(--secondary-text-color);
+.input-group{
+  display: block;
 }
-
-.contact .row form input:focus, .contact .row form textarea:focus{
-  border-color: var(--main-color);
+#input-label{
+  border: none;
+ width: 100%;
+ border-bottom: 1px black solid;
+  margin-bottom: 20px;
+  line-height: 40px;
+  font-family: 'Titillium Web', sans-serif;
 }
-
-.contact .row form .inputBox input{
-  width:49%;
-}
-
-.contact .row form textarea{
-  height: 15rem;
-  resize: none;
-}
-
-.contact .row form .btn{
-  cursor: pointer;
-}
-
-.contact .box-container{
+.submit{
+  
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
+  justify-content: center
+}
+#submit-form{
+    width: 20%;
+    border-radius: 2rem;
+    padding: 10px;
+    border-style:none ;
+    background-color: #2ea8d9;
+    transition: all 0.3s ease;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 90%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#submit-form:hover{
+  background-color: chocolate;
+
 }
 
-.contact .box-container .box{
-  flex:1 1 30rem;
-  margin:1rem;
-  padding:3rem 1rem;
-  background:var(--primary-bg-color);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-  border-radius: .5rem;
-  text-align: center;
-}
 
-.contact .box-container .box i{
-  height: 6rem;
-  width:6rem;
-  line-height: 6rem;
-  border-radius: 50%;
-  font-size: 3rem;
-  background:var(--secondary-bg-color);
-  color:var(--main-color);
-}
-
-.contact .box-container .box h3{
-  color:var(--primary-text-color);
-  padding:1rem 0;
-  font-size: 2rem;
-}
-
-.contact .box-container .box p{
-  font-size: 1.5rem;
-  color:var(--secondary-text-color);
-}
 
 
 .doctor .box-container{
