@@ -1,9 +1,20 @@
-#section_home {
+body {
+  height: 80vh;
   background-color: aquamarine;
-  height: 90vh;
+}
+
+#section_home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #section_home .container {
+  height: 70vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -48,15 +59,36 @@
   text-shadow: 1px 1px 2px white;
 }
 
+#section_home .descr {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#section_home .descr h3 {
+  font-family: "Krona One", sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#section_home .descr p {
+  font-weight: bold;
+  font-family: "Krona One", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  text-shadow: 1px 1px 2px white;
+}
+
 #section_home .buttons {
-  position: relative;
-  bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #section_home .buttons a {

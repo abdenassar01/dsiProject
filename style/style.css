@@ -47,8 +47,8 @@ header{
 }
 
 .navigation-menu a:hover{
-  background: #007580;
-  color: #75cfb8;
+  background: rgb(237, 253, 12);
+  color: #ffffff;
   transform: scale(1.1);
 }
 
