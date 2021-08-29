@@ -35,7 +35,7 @@ header{
 
 .navigation-menu a{
   margin-left: 10px;
-  color: #2ea8d9;
+  color: black;
   text-transform: uppercase;
   font-size: 14px;
   padding: 12px 20px;
@@ -58,11 +58,11 @@ header{
 }
 
 .home{
-  color: #ff6b6b;
+  color: #ff0000;
 }
 
 .cours{
-  color: #0abde3 ;
+  color: #091079 ;
 }
 
 .tptd{
@@ -74,7 +74,7 @@ header{
 }
 
 .contact{
-  color: #1dd1a1;
+  color: #fcadad;
 }
 
 .menu-toggle-btn{
@@ -88,7 +88,7 @@ header{
 }
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:743px) {
   .menu-toggle-btn{
     display: block !important;
   }
@@ -97,19 +97,20 @@ header{
     position: fixed;
     width: 100%;
     max-width: 400px;
-    background: #172b4d;
+    background: #27c0b8;
     top: 90px;
     right: 0;
     display: none;
     padding: 20px 40px;
     box-sizing: border-box;
+    z-index: 2;
   }
 
   .navigation-menu::before{
     content: "";
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #172b4d;
+    border-bottom: 10px solid #27c0b8;
     position: absolute;
     top: -10px;
     right: 10px;
@@ -118,6 +119,7 @@ header{
   .navigation-menu a{
     display: block;
     margin: 10px 0;
+    color: #ffffff;
   }
 
   .navigation-menu.active{

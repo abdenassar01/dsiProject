@@ -1,49 +1,43 @@
-body {
-  height: 80vh;
+.container {
+  height: 90vh;
   background-color: aquamarine;
-}
-
-#section_home {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#section_home .container {
-  height: 70vh;
   display: -ms-grid;
   display: grid;
+  grid-auto-columns: 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 0px 17px;
+      grid-template-areas: "picture descr" "buttons buttons";
 }
 
-#section_home .container .picture {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.container .picture {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: picture;
   -ms-grid-column-align: center;
       justify-self: center;
-  position: relative;
-  top: 30px;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
 }
 
-#section_home .container .picture img {
+.container .picture img {
   max-width: 100%;
 }
 
-#section_home .container .descr {
+.container .descr {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: descr;
+  -ms-grid-column-align: center;
+      justify-self: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
 }
 
-#section_home .container .descr h3 {
+.container .descr h3 {
   font-family: "Krona One", sans-serif;
   font-weight: bold;
   text-shadow: 1px 1px 2px white;
@@ -51,7 +45,7 @@ body {
   text-transform: uppercase;
 }
 
-#section_home .container .descr p {
+.container .descr p {
   font-weight: bold;
   font-family: "Krona One", sans-serif;
   font-size: 15px;
@@ -59,39 +53,17 @@ body {
   text-shadow: 1px 1px 2px white;
 }
 
-#section_home .descr {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.container .buttons {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: buttons;
   -ms-grid-column-align: center;
       justify-self: center;
+  z-index: 1;
 }
 
-#section_home .descr h3 {
-  font-family: "Krona One", sans-serif;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px white;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-#section_home .descr p {
-  font-weight: bold;
-  font-family: "Krona One", sans-serif;
-  font-size: 15px;
-  text-align: center;
-  text-shadow: 1px 1px 2px white;
-}
-
-#section_home .buttons {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-#section_home .buttons a {
+.container .buttons a {
   text-decoration: none;
   color: black;
   padding: 10px 30px;
@@ -102,10 +74,54 @@ body {
   font-family: "Krona One", sans-serif;
 }
 
-#section_home .buttons a:hover {
+.container .buttons a:hover {
   background-color: #ff8800;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   color: white;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container .buttons a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 854px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (0.1fr)[3];
+        grid-template-rows: repeat(3, 0.1fr);
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+        grid-template-areas: "picture" "descr" "buttons";
+    height: auto;
+  }
+  .container .descr {
+    padding-bottom: 10px;
+  }
+  .container .buttons a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 717px) {
+  .container .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=section1.css.map */
