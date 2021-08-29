@@ -1,65 +1,62 @@
-@import './variables'
-
-.continner {
-  height: 100vh;
-  background-color: $colorLight;
-
-  .section1 {
-    display: flex;
-    justify-content: center;
-    
-
-   
-
-    .discreption {
-      width: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      h2 {
-        font-family: $font-family;
+@import './variables';
+ 
+#section_home{
+  background-color: aquamarine;
+  height: 90vh;
+  
+  .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+     .picture{
+       align-self: center;
+       justify-self: center;
+       position: relative;
+       top: 30px;
+       img{
+         max-width: 100%;
+       }
+     }
+     .descr{
+      align-self: center;
+      justify-self: center;
+        h3{
+          font-family: $font-family;
         font-weight: bold;
         text-shadow: $shadow;
         text-align: center;
         text-transform: uppercase;
-        position: relative;
-        left: 270px;
-        bottom: 50px;
-      }
-
-      p {
+        }
+      p{
         font-weight: bold;
         font-family: $font-family;
         font-size: 15px;
         text-align: center;
         text-shadow: $shadow;
-        position: relative;
-        top: 100px;
-        right: 65px;
       }
-    }
-  }
-  .buttons {
-    position: relative;
-    bottom: 50px;
-    display: flex;
-    justify-content: center;
+     }
+     
+}
+.buttons {
+  position: relative;
+  bottom: 50px;
+  display: flex;
+   
+  justify-content: center;
 
-    a {
-      text-decoration: none;
-      color: $colorDark;
-      padding: 10px 30px;
-      margin: 3px;
-      border-bottom-right-radius: 20px;
-      border-top-left-radius: 20px;
-      background-color: $colorBleuLight;
-      font-family: $font-family;
-    }
-    a:hover {
-      background-color: rgb(255, 136, 0);
-      transition: ease-in-out 0.2s;
-      color: white;
-    }
+  a {
+    text-decoration: none;
+    color: $colorDark;
+    padding: 10px 30px;
+    margin: 3px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: $colorBleuLight;
+    font-family: $font-family;
   }
+  a:hover {
+    background-color: rgb(255, 136, 0);
+    transition: all ease-in-out 0.2s;
+    color: white;
+  }
+}
 }

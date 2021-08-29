@@ -6,44 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/section1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    
     <link rel="icon" href="./img/marginalia-web-programer.png">
 
     <title>Acceuil</title>
 </head>
 <body>
-    <!--Start Header-->
-    <div class="continner">
-        <header>
-                <div class="nav">
-                    <div class="logo">
-                        <img src="img/marginalia-web-programer.png" alt="logo site">
-                    </div>
-                    <div class="nav-links">
-                        <ul>
-                            <a href="Acceuil.html"><li>Acceuil</li></a>
-                            <a href="cours.html"><li>Cours</li></a>
-                            <a href="#"> <li>TP & TD</li></a>
-                            <a href="logiciel.html"> <li>logiciel</li></a>
-                            <a href="contact.html"><li>Contact</li></a>
-                        </ul>
-                    </div>
-                </div>
-        </header>
-        <div class="section1">
-           
-             <img src="./img/mainlogo png.png" class="mainlogo">
-             <div class="discreption">
-                 <h2>DEVELOPEMENT DES SéSTYMES D'INFORMATION</h2>
-                 <P>Le BTS Développement des Systèmes d'Information forme des cadres capables d'intervenir dans la conception et la fabrication d'un
-                 ensemble informatique et garantissent le suivi, le contrôle et la gestion d'un système en temps réel.</P>
-             </div>
+    <header>
+        <div class="inner-width">
+          <a href="#" class="logo"><i class="fas fa-laptop-code"></i></a>
+          <i class="menu-toggle-btn fas fa-bars"></i>
+          <nav class="navigation-menu">
+            <a href="./Acceuil.html"><i class="fas fa-home home"></i> Acceuil</a>
+            <a href="./cours.html"><i class="fas fa-book cours"></i> Cours</a>
+            <a href="#"><i class="fab fa-buffer tptd"></i> TP & TD</a>
+            <a href="./logiciel.html"><i class="fas fa-download logi"></i> Logiciel</a>
+            <a href="./contact.html"><i class="fas fa-headset contact"></i> Contact</a>
+          </nav>
         </div>
-        <div class="buttons">
-            <a href="https://drive.google.com/file/d/1WVDYF6qdfXn_WlDqKvewj7DbARFNsg7o/view?usp=sharing" target="_blank">Programme de formation</a>
-            <a href="https://drive.google.com/file/d/13vvuFC-b3xkAzwULJ1cTepP60UFJUuvk/view?usp=sharing" target="_blank">Référentiel de Formation
-            </a>
-            <a href="./logiciel.html">Télécharger les logiciel</a>
-        </div>
-    </div>
+      </header>
+      <section id="section_home"> 
+            <div class="container">
+              <div class="picture"><img src="img/mainlogo png.png"></div>
+              <div class="descr">
+                  <h3>Développement des systèmes d'information</h3>
+                  <p>Le BTS Développement des Systèmes d'Information forme des cadres capables d'intervenir dans la conception et la fabrication d'un ensemble informatique et garantissent le suivi, le contrôle et la gestion d'un système en temps réel.</p>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="https://drive.google.com/file/d/1WVDYF6qdfXn_WlDqKvewj7DbARFNsg7o/view?usp=sharing" target="_blank">Programme de formation</a>
+              <a href="https://drive.google.com/file/d/13vvuFC-b3xkAzwULJ1cTepP60UFJUuvk/view?usp=sharing" target="_blank">Référentiel de Formation
+              </a>
+              <a href="./logiciel.html">Télécharger les logiciel</a>
+          </div>
+      </section>
+      <script src="index.js"></script>
 </body>
 </html>

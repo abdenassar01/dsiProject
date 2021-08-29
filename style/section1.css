@@ -1,62 +1,54 @@
-body{
-  box-sizing: border-box;
-  background-color:#c0fefc ;
-}
-.continner {
-  height: 100vh;
-  background-color: #c0fefc;
-  box-sizing: border-box;
+#section_home {
+  background-color: aquamarine;
+  height: 90vh;
 }
 
-.continner .section1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-          
+#section_home .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
-
-
-.continner .section1 .discreption {
-  width: 50%;
-  margin-bottom: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#section_home .container .picture {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  position: relative;
+  top: 30px;
 }
 
-.continner .section1 .discreption h2 {
+#section_home .container .picture img {
+  max-width: 100%;
+}
+
+#section_home .container .descr {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#section_home .container .descr h3 {
   font-family: "Krona One", sans-serif;
   font-weight: bold;
   text-shadow: 1px 1px 2px white;
   text-align: center;
   text-transform: uppercase;
-  position: relative;
-  left: 270px;
-  bottom: 50px;
 }
 
-.continner .section1 .discreption p {
+#section_home .container .descr p {
   font-weight: bold;
   font-family: "Krona One", sans-serif;
   font-size: 15px;
   text-align: center;
   text-shadow: 1px 1px 2px white;
-  position: relative;
-  top: 100px;
-  right: 65px;
 }
 
-.continner .buttons {
+#section_home .buttons {
   position: relative;
   bottom: 50px;
   display: -webkit-box;
@@ -67,9 +59,9 @@ body{
           justify-content: center;
 }
 
-.continner .buttons a {
+#section_home .buttons a {
   text-decoration: none;
-  color: #c2c3c4;
+  color: black;
   padding: 10px 30px;
   margin: 3px;
   border-bottom-right-radius: 20px;
@@ -78,10 +70,10 @@ body{
   font-family: "Krona One", sans-serif;
 }
 
-.continner .buttons a:hover {
+#section_home .buttons a:hover {
   background-color: #ff8800;
-  -webkit-transition: ease-in-out 0.2s;
-  transition: ease-in-out 0.2s;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
   color: white;
 }
 /*# sourceMappingURL=section1.css.map */

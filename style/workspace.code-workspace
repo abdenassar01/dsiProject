@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\covid website\\covid website"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\web service\\web service"
+		},
+		{
+			"path": "..\\..\\موقع شخصي\\personal portfolio"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "dsiProject"
+	}
+}
