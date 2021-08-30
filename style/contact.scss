@@ -1,5 +1,6 @@
 @import "./variables";
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
 .section2 {
   .big-picture {
     height: 100vh;
@@ -30,71 +31,69 @@
       font-size: 1rem;
     }
   }
-  .form {
-    background-color: $colorLight;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    form {
-      line-height: 80px;
-      position: relative;
-
-      label {
-        position: relative;
-        bottom: 40px;
-        font-family: $font-family;
-        left: 60px;
-      }
-
-      .submit {
-        position: absolute;
-        bottom: -100px;
-        padding: 15px 40px;
-        font-size: larger;
-        border-bottom-right-radius: 20px;
-        border: none;
-        left: 35%;
-        color: rgb(255, 255, 255);
-        background-color: $colorBleuLight;
-        font-family: $font-family;
-        font-weight: bold;
-       
-      }
-
-      .submit:hover {
-        background-color: $colorhover;
-      }
-
-      .input {
-        border: none;
-        border-bottom: 2px solid #2e3335;
-        padding-right: 200px;
-        padding-top: 20px;
-        text-align: justify;
-        margin-left: 100px;
-        background: none;
-      }
-
-      textarea {
-        position: relative;
-        top: 50px;
-        right: 8%;
-        font-weight: bold;
-      }
-      .textarealabel {
-        position: relative;
-        bottom: 150px;
-      }
-
-      .input:focus {
-        border: none;
-        transition: all 0.2s ease-in-out;
-        border-bottom: 2px solid #1383af;
-      }
-    }
-  }
+  
 }
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100% 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "forms-contact img-contact"
+    "box-bila box-abden";
+    .forms-contact { 
+      grid-area: forms-contact;
+      align-self: center;
+      justify-self: center;
+        form{
+              .input-group{
+                font-family: 'Noto Sans KR', sans-serif;
+                line-height: 40px;
+                   input{
+                       outline: none;
+                        border: none;
+                        border-bottom: 1px black solid;
+                        width: 300px;
+                        
+                   }
+                   textarea{
+                    outline: none;
+                    border: none;
+                    border-bottom: 1px black solid;
+                    width: 300px;
+                   }
+                   #submit-form{
+                     border:none;
+                     width: 200px;
+                     height: 30px;
+                     transform: translateX(50px);
+                     color: rgb(255, 255, 255);
+                     background-color: rgb(52, 235, 248);
+                     border-radius: 10px;
+                     transition: all 400ms ease;
+                   }
+                   #submit-form:hover{
+                           background-color: rgb(222, 245, 20);
+                           color: black
+                           
+                   }
+              }
+        }
+     }
+
+.img-contact { grid-area: img-contact; 
+        align-self: center;
+}
+
+.box-bila { grid-area: box-bila; 
+}
+
+.box-abden { grid-area: box-abden;
+ }
+}
+
+
 
 

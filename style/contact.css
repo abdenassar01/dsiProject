@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
 .section2 .big-picture {
   height: 100vh;
   background-color: #1383af;
@@ -29,76 +30,85 @@
   font-size: 1rem;
 }
 
-.section2 .form {
-  background-color: #c0fefc;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 100% 1fr;
+      grid-template-rows: 100% 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+      grid-template-areas: "forms-contact img-contact" "box-bila box-abden";
 }
 
-.section2 .form form {
-  line-height: 80px;
-  position: relative;
+.container .forms-contact {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: forms-contact;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
-.section2 .form form label {
-  position: relative;
-  bottom: 40px;
-  font-family: "Krona One", sans-serif;
-  left: 60px;
+.container .forms-contact form .input-group {
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 40px;
 }
 
-.section2 .form form .submit {
-  position: absolute;
-  bottom: -100px;
-  padding: 15px 40px;
-  font-size: larger;
-  border-bottom-right-radius: 20px;
+.container .forms-contact form .input-group input {
+  outline: none;
   border: none;
-  left: 35%;
+  border-bottom: 1px black solid;
+  width: 300px;
+}
+
+.container .forms-contact form .input-group textarea {
+  outline: none;
+  border: none;
+  border-bottom: 1px black solid;
+  width: 300px;
+}
+
+.container .forms-contact form .input-group #submit-form {
+  border: none;
+  width: 200px;
+  height: 30px;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
   color: white;
-  background-color: #11cca3;
-  font-family: "Krona One", sans-serif;
-  font-weight: bold;
+  background-color: #34ebf8;
+  border-radius: 10px;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 
-.section2 .form form .submit:hover {
-  background-color: #ff8800;
+.container .forms-contact form .input-group #submit-form:hover {
+  background-color: #def514;
+  color: black;
 }
 
-.section2 .form form .input {
-  border: none;
-  border-bottom: 2px solid #2e3335;
-  padding-right: 200px;
-  padding-top: 20px;
-  text-align: justify;
-  margin-left: 100px;
-  background: none;
+.container .img-contact {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img-contact;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-.section2 .form form textarea {
-  position: relative;
-  top: 50px;
-  right: 8%;
-  font-weight: bold;
+.container .box-bila {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: box-bila;
 }
 
-.section2 .form form .textarealabel {
-  position: relative;
-  bottom: 150px;
-}
-
-.section2 .form form .input:focus {
-  border: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  border-bottom: 2px solid #1383af;
+.container .box-abden {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: box-abden;
 }
 /*# sourceMappingURL=contact.css.map */
