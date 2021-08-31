@@ -201,42 +201,25 @@
 @media (max-width:585px){
    .continner{
        .container{
-       .box-bila{
-          width: 20rem;
-          margin-bottom: 20px;
-          img{
-             width:150px ;
-             height: 150px;
+        .container{
+          > div{
+            width: 15px;
+            img{
+              width: 150px;
+              height: 150px;
+            }
           }
-       }
-       .box-abden{
-                width: 20rem;
-                img{
-                  width:150px ;
-                  height: 150px;
-               }
-       }
       }
 }
 }
+}
 @media (max-width:375px){
-
 .continner{
   .container{
-  .box-bila{
-     width: 15rem;
-     img{
-        width:150px ;
-        height: 150px;
-     }
-  }
-  .box-abden{
-           width: 15rem;
-           img{
-             width:150px ;
-             height: 150px;
-          }
-  }
+        > div{
+          width: 15px;
+        }
+  
  }
 }
 }

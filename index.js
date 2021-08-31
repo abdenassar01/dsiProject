@@ -10,4 +10,8 @@ $( ".menu-toggle-btn" ).on( "click", function() {
 });
 $( ".menu-toggle-btn" ).trigger( "click" );
 
- 
+$(window).on('load scroll',function(){
+
+  $('.menu-toggle-btn').removeClass('fa-times');
+  $('.navigation-menu').removeClass('active');
+})
