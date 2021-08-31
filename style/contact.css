@@ -1,49 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
-.section2 .big-picture {
-  height: 100vh;
-  background-color: #1383af;
-}
-
-.section2 .big-picture img {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  opacity: 0.4;
-}
-
-.section2 .big-picture h1 {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  font-size: 3rem;
-  font-family: "Krona One", sans-serif;
-}
-
-.section2 .big-picture p {
-  position: absolute;
-  top: 40%;
-  left: 34%;
-  text-shadow: 2px 2px 0.5px black;
-  color: white;
-  font-family: "Krona One", sans-serif;
-  font-size: 1rem;
-}
-
-.container {
+.continner .container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 100% 1fr;
-      grid-template-rows: 100% 1fr;
+  -ms-grid-rows: 50%  1fr;
+      grid-template-rows: 50%  1fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
       grid-template-areas: "forms-contact img-contact" "box-bila box-abden";
 }
 
-.container .forms-contact {
+.continner .container .forms-contact {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: forms-contact;
@@ -54,26 +25,26 @@
       justify-self: center;
 }
 
-.container .forms-contact form .input-group {
+.continner .container .forms-contact form .input-group {
   font-family: 'Noto Sans KR', sans-serif;
   line-height: 40px;
 }
 
-.container .forms-contact form .input-group input {
+.continner .container .forms-contact form .input-group input {
   outline: none;
   border: none;
   border-bottom: 1px black solid;
   width: 300px;
 }
 
-.container .forms-contact form .input-group textarea {
+.continner .container .forms-contact form .input-group textarea {
   outline: none;
   border: none;
   border-bottom: 1px black solid;
   width: 300px;
 }
 
-.container .forms-contact form .input-group #submit-form {
+.continner .container .forms-contact form .input-group #submit-form {
   border: none;
   width: 200px;
   height: 30px;
@@ -86,29 +57,219 @@
   transition: all 400ms ease;
 }
 
-.container .forms-contact form .input-group #submit-form:hover {
+.continner .container .forms-contact form .input-group #submit-form:hover {
   background-color: #def514;
   color: black;
 }
 
-.container .img-contact {
+.continner .container .forms-contact form .input-group .box-alert {
+  text-align: center;
+  background-color: brown;
+  border-radius: 20px;
+  margin-top: 5px;
+  display: none;
+}
+
+.continner .container .img-contact {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: img-contact;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  max-width: 100%;
 }
 
-.container .box-bila {
+.continner .container .img-contact img {
+  max-width: 100%;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+}
+
+.continner .container .box-bila {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: box-bila;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  width: 33rem;
 }
 
-.container .box-abden {
+.continner .container .box-bila img {
+  margin: 1rem;
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.continner .container .box-bila h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: 'Dosis', sans-serif;
+  padding: 0px;
+  margin: 5px 0 5px 0;
+}
+
+.continner .container .box-bila span {
+  font-size: 1.5rem;
+  font-family: cursive;
+  text-transform: uppercase;
+}
+
+.continner .container .box-bila .share {
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.continner .container .box-bila .share a {
+  border-radius: 50%;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  margin: .4rem;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.continner .container .box-bila .share a:hover {
+  color: #dd3e3e;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.continner .container .box-abden {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: box-abden;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  width: 33rem;
+}
+
+.continner .container .box-abden img {
+  margin: 1rem;
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.continner .container .box-abden h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: 'Dosis', sans-serif;
+  padding: 0px;
+  margin: 5px 0 5px 0;
+}
+
+.continner .container .box-abden span {
+  font-size: 1.5rem;
+  font-family: cursive;
+  text-transform: uppercase;
+}
+
+.continner .container .box-abden .share {
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.continner .container .box-abden .share a {
+  border-radius: 50%;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  margin: .4rem;
+  -webkit-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+}
+
+.continner .container .box-abden .share a:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  color: #dd3e3e;
+}
+
+@media (max-width: 1144px) {
+  .continner .container {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (0.5fr)[4];
+        grid-template-rows: repeat(4, 0.5fr);
+    gap: 0px 0px;
+        grid-template-areas: "img-contact" "forms-contact" "box-bila" "box-abden";
+  }
+  .continner .container .box-abden {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: box-abden;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+@media (max-width: 585px) {
+  .continner .container .box-bila {
+    width: 20rem;
+    margin-bottom: 20px;
+  }
+  .continner .container .box-bila img {
+    width: 150px;
+    height: 150px;
+  }
+  .continner .container .box-abden {
+    width: 20rem;
+  }
+  .continner .container .box-abden img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 375px) {
+  .continner .container .box-bila {
+    width: 15rem;
+  }
+  .continner .container .box-bila img {
+    width: 150px;
+    height: 150px;
+  }
+  .continner .container .box-abden {
+    width: 15rem;
+  }
+  .continner .container .box-abden img {
+    width: 150px;
+    height: 150px;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
