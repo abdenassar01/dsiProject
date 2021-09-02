@@ -239,37 +239,18 @@
 }
 
 @media (max-width: 585px) {
-  .continner .container .box-bila {
-    width: 20rem;
-    margin-bottom: 20px;
+  .continner .container .container > div {
+    width: 15px;
   }
-  .continner .container .box-bila img {
-    width: 150px;
-    height: 150px;
-  }
-  .continner .container .box-abden {
-    width: 20rem;
-  }
-  .continner .container .box-abden img {
+  .continner .container .container > div img {
     width: 150px;
     height: 150px;
   }
 }
 
 @media (max-width: 375px) {
-  .continner .container .box-bila {
-    width: 15rem;
-  }
-  .continner .container .box-bila img {
-    width: 150px;
-    height: 150px;
-  }
-  .continner .container .box-abden {
-    width: 15rem;
-  }
-  .continner .container .box-abden img {
-    width: 150px;
-    height: 150px;
+  .continner .container > div {
+    width: 15px;
   }
 }
 /*# sourceMappingURL=contact.css.map */

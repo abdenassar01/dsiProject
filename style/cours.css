@@ -84,6 +84,10 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
 }
 
 .continner .content-cours .module .cours .cour {
@@ -96,6 +100,7 @@
           box-shadow: 1px 1px 5px black;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
 }
 
 .continner .content-cours .module .cours .cour a {
@@ -118,7 +123,16 @@
 }
 
 .continner .content-cours .module .cours .cour .imgcours {
-  width: 200px;
+  width: 150px;
   height: auto;
+}
+
+.continner .content-cours .module .cours .cour span {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  background-color: chartreuse;
+  padding: 10px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=cours.css.map */
